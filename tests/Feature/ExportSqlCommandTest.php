@@ -26,5 +26,17 @@ class ExportSqlCommandTest extends TestCase
         $this->assertStringContainsString('INSERT INTO `migrations`', $sql);
         $this->assertSame(9, substr_count($sql, 'INSERT INTO `projects`'));
         $this->assertStringNotContainsString('INSERT INTO `users`', $sql, 'No account is exported unless requested.');
+
+        // `migrations` is Laravel's own bookkeeping table, created at runtime
+        // rather than by a migration file — schema() never emits its CREATE on
+        // its own. Importing INSERT INTO migrations without a preceding CREATE
+        // fails with "table doesn't exist" on an empty database, which can
+        // abort everything after it depending on the importer.
+        $this->assertStringContainsString('CREATE TABLE `migrations`', $sql);
+        $this->assertLessThan(
+            strpos($sql, 'INSERT INTO `migrations`'),
+            strpos($sql, 'CREATE TABLE `migrations`'),
+            'CREATE TABLE `migrations` must appear before INSERT INTO `migrations`.',
+        );
     }
 }

@@ -31,7 +31,8 @@ class SeoTest extends TestCase
         $this->assertContains(url('/'), $locs->all());
         $this->assertContains(url('/projects/emr-patient-intake-platform'), $locs->all());
         $this->assertNotContains(url('/projects/'.$draft->slug), $locs->all());
-        $this->assertFalse($locs->contains(fn ($loc) => str_contains($loc, '/admin')), 'Admin URLs must never be listed.');
+        $adminPath = config('portfolio.admin.path');
+        $this->assertFalse($locs->contains(fn ($loc) => str_contains($loc, "/{$adminPath}")), 'Admin URLs must never be listed.');
     }
 
     public function test_robots_txt_allows_crawling_and_points_to_sitemap_in_production(): void

@@ -116,8 +116,8 @@ class TestimonialTest extends TestCase
         $project = Project::factory()->create(['title' => 'Portal Project']);
 
         $response = $this->actingAs($this->admin())
-            ->post('/admin/testimonials/request', ['author_name' => 'Asha Client', 'project_id' => $project->id])
-            ->assertRedirect('/admin/testimonials');
+            ->post(route('admin.testimonials.request'), ['author_name' => 'Asha Client', 'project_id' => $project->id])
+            ->assertRedirect(route('admin.testimonials.index'));
 
         $link = session('request_link');
         $this->assertStringStartsWith(url('/feedback/'), $link['url']);
@@ -181,7 +181,7 @@ class TestimonialTest extends TestCase
     {
         [$testimonial, $oldToken] = Testimonial::createRequest(null, 'Asha', null);
 
-        $this->actingAs($this->admin())->post("/admin/testimonials/{$testimonial->id}/regenerate-link");
+        $this->actingAs($this->admin())->post(route('admin.testimonials.regenerate', $testimonial));
         $newUrl = session('request_link')['url'];
 
         $this->get("/feedback/{$oldToken}")->assertStatus(410);
@@ -193,7 +193,7 @@ class TestimonialTest extends TestCase
     public function test_publishing_requires_recorded_consent(): void
     {
         $this->actingAs($this->admin())
-            ->post('/admin/testimonials', [
+            ->post(route('admin.testimonials.store'), [
                 'author_name' => 'Manual Entry',
                 'quote' => 'Received by email.',
                 'status' => 'published',
@@ -202,7 +202,7 @@ class TestimonialTest extends TestCase
             ->assertSessionHasErrors('consent');
 
         $this->actingAs($this->admin())
-            ->post('/admin/testimonials', [
+            ->post(route('admin.testimonials.store'), [
                 'author_name' => 'Manual Entry',
                 'quote' => 'Received by email.',
                 'status' => 'published',
@@ -224,8 +224,8 @@ class TestimonialTest extends TestCase
 
         $this->actingAs($this->admin());
 
-        $this->get('/admin/testimonials')->assertOk()->assertSee('Pending Person')->assertSee('Request a testimonial');
-        $this->get('/admin/testimonials/create')->assertOk();
-        $this->get("/admin/testimonials/{$testimonial->id}/edit")->assertOk()->assertSee('Permission recorded');
+        $this->get(route('admin.testimonials.index'))->assertOk()->assertSee('Pending Person')->assertSee('Request a testimonial');
+        $this->get(route('admin.testimonials.create'))->assertOk();
+        $this->get(route('admin.testimonials.edit', $testimonial))->assertOk()->assertSee('Permission recorded');
     }
 }

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+  <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+    <path d="M56 0H0V56" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="glow" cx="0.8" cy="0.2" r="0.6">
+    <stop offset="0" stop-color="#e8651e" stop-opacity="0.26"/>
+    <stop offset="1" stop-color="#e8651e" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0e0e11" stop-opacity="0"/>
+    <stop offset="1" stop-color="#0e0e11" stop-opacity="0.9"/>
+  </linearGradient>
+  <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e8651e"/>
+    <stop offset="1" stop-color="#ffb547"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="#0e0e11"/>
+<rect width="1600" height="1000" fill="url(#grid)"/>
+<rect width="1600" height="1000" fill="url(#glow)"/>
+<rect x="170" y="150" width="800" height="700" rx="24" fill="#16161a" stroke="#2b2b32" stroke-width="1.5" opacity="1"/>
+<text x="220" y="220" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="start" letter-spacing="2.5">QUESTION 3 OF 10</text>
+<rect x="220" y="244" width="700" height="8" rx="4" fill="#232329"/><rect x="220" y="244" width="210" height="8" rx="4" fill="#e8651e"/>
+<rect x="220" y="300" width="620" height="22" rx="8" fill="#e7e7eb"/><rect x="220" y="336" width="420" height="22" rx="8" fill="#e7e7eb"/>
+<rect x="220" y="410" width="700" height="72" rx="14" fill="#1c1c21" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><circle cx="264" cy="446" r="18" fill="#232329" /><text x="264" y="453" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" font-style="normal" fill="#e7e7eb" text-anchor="middle" letter-spacing="0">A</text><rect x="300" y="440" width="340" height="12" rx="6" fill="#34343c"/><rect x="220" y="502" width="700" height="72" rx="14" fill="#1c1c21" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><circle cx="264" cy="538" r="18" fill="#232329" /><text x="264" y="545" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" font-style="normal" fill="#e7e7eb" text-anchor="middle" letter-spacing="0">B</text><rect x="300" y="532" width="280" height="12" rx="6" fill="#34343c"/><rect x="220" y="594" width="700" height="72" rx="14" fill="rgba(232,101,30,0.12)" stroke="#e8651e" stroke-width="1.5" opacity="1"/><circle cx="264" cy="630" r="18" fill="#e8651e" /><text x="264" y="637" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" font-style="normal" fill="#0e0e11" text-anchor="middle" letter-spacing="0">C</text><rect x="300" y="624" width="380" height="12" rx="6" fill="#e7e7eb"/><rect x="220" y="686" width="700" height="72" rx="14" fill="#1c1c21" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><circle cx="264" cy="722" r="18" fill="#232329" /><text x="264" y="729" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700" font-style="normal" fill="#e7e7eb" text-anchor="middle" letter-spacing="0">D</text><rect x="300" y="716" width="240" height="12" rx="6" fill="#34343c"/>
+<rect x="1080" y="250" width="340" height="90" rx="45" fill="#e8651e" stroke="none" stroke-width="1.5" opacity="1"/><text x="1250" y="306" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="700" font-style="normal" fill="#0e0e11" text-anchor="middle" letter-spacing="0">Generate quiz</text>
+<text x="1080" y="400" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="start" letter-spacing="2.5">FALLBACK CHAIN</text><rect x="1080" y="430" width="340" height="80" rx="18" fill="#16161a" stroke="#e8651e" stroke-width="1.5" opacity="1"/><text x="1250" y="478" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="500" font-style="normal" fill="#e8651e" text-anchor="middle" letter-spacing="0">gemini</text><line x1="1250" y1="512" x2="1250" y2="546" stroke="#4b4b55" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/><path d="M1238 537 L1252 546 L1238 555" fill="none" stroke="#4b4b55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1080" y="550" width="340" height="80" rx="18" fill="#16161a" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><text x="1250" y="598" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="middle" letter-spacing="0">openai</text><line x1="1250" y1="632" x2="1250" y2="666" stroke="#4b4b55" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/><path d="M1238 657 L1252 666 L1238 675" fill="none" stroke="#4b4b55" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="1080" y="670" width="340" height="80" rx="18" fill="#16161a" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><text x="1250" y="718" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="middle" letter-spacing="0">rule-based</text>
+
+</svg>

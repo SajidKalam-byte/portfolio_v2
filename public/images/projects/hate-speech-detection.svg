@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+<defs>
+  <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+    <path d="M56 0H0V56" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+  </pattern>
+  <radialGradient id="glow" cx="0.5" cy="0.2" r="0.6">
+    <stop offset="0" stop-color="#e8651e" stop-opacity="0.26"/>
+    <stop offset="1" stop-color="#e8651e" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0e0e11" stop-opacity="0"/>
+    <stop offset="1" stop-color="#0e0e11" stop-opacity="0.9"/>
+  </linearGradient>
+  <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#e8651e"/>
+    <stop offset="1" stop-color="#ffb547"/>
+  </linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="#0e0e11"/>
+<rect width="1600" height="1000" fill="url(#grid)"/>
+<rect width="1600" height="1000" fill="url(#glow)"/>
+
+<rect x="110" y="220" width="360" height="520" rx="20" fill="#16161a" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><text x="140" y="270" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="start" letter-spacing="2.5">BEFORE</text>
+<line x1="150" y1="680" x2="430" y2="680" stroke="#2b2b32" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="190" y="320" width="90" height="360" rx="10" fill="#4b4b55"/><rect x="310" y="610" width="90" height="70" rx="10" fill="#e8651e"/>
+<text x="235" y="715" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="middle" letter-spacing="0">class 0</text><text x="355" y="715" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="middle" letter-spacing="0">class 1</text>
+<line x1="490" y1="480" x2="580" y2="480" stroke="#e8651e" stroke-width="2.5" stroke-dasharray="6 8" stroke-linecap="round"/><path d="M568 471 L582 480 L568 489" fill="none" stroke="#e8651e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="535" y="450" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="20" font-weight="700" font-style="normal" fill="#e8651e" text-anchor="middle" letter-spacing="0">SMOTE</text>
+<rect x="600" y="220" width="360" height="520" rx="20" fill="#16161a" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><text x="630" y="270" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="start" letter-spacing="2.5">AFTER</text>
+<line x1="640" y1="680" x2="920" y2="680" stroke="#2b2b32" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="680" y="320" width="90" height="360" rx="10" fill="#4b4b55"/><rect x="800" y="350" width="90" height="330" rx="10" fill="#e8651e"/>
+<text x="725" y="715" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="middle" letter-spacing="0">class 0</text><text x="845" y="715" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="middle" letter-spacing="0">class 1</text>
+<rect x="1040" y="220" width="450" height="520" rx="20" fill="#16161a" stroke="#2b2b32" stroke-width="1.5" opacity="1"/><text x="1070" y="270" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace" font-size="17" font-weight="500" font-style="normal" fill="#8b8b95" text-anchor="start" letter-spacing="2.5">LOGISTIC REGRESSION</text>
+<line x1="1070" y1="490" x2="1470" y2="490" stroke="#2b2b32" stroke-width="1.5" stroke-dasharray="6 8" stroke-linecap="round"/>
+<circle cx="1090" cy="690" r="8" fill="#4b4b55" /><circle cx="1157.8190456321317" cy="690" r="8" fill="#4b4b55" /><circle cx="1120.619512676094" cy="690" r="8" fill="#4b4b55" /><circle cx="1238.0029620463029" cy="690" r="8" fill="#4b4b55" /><circle cx="1241.1775590264733" cy="690" r="8" fill="#4b4b55" /><circle cx="1224.0221981998184" cy="690" r="8" fill="#4b4b55" /><circle cx="1218.6913536332577" cy="690" r="8" fill="#4b4b55" /><circle cx="1287.8290456710965" cy="690" r="8" fill="#4b4b55" /><circle cx="1148.518967287273" cy="690" r="8" fill="#4b4b55" /><circle cx="1162.3437462851507" cy="690" r="8" fill="#4b4b55" /><circle cx="1249.0528165849946" cy="690" r="8" fill="#4b4b55" /><circle cx="1110.1059184391852" cy="690" r="8" fill="#4b4b55" /><circle cx="1101.8694491855422" cy="690" r="8" fill="#4b4b55" /><circle cx="1152.0856477344205" cy="690" r="8" fill="#4b4b55" /><circle cx="1327.069526573814" cy="290" r="8" fill="#e8651e" /><circle cx="1310.324519484891" cy="290" r="8" fill="#e8651e" /><circle cx="1321.4393564609964" cy="290" r="8" fill="#e8651e" /><circle cx="1360.7824602506298" cy="290" r="8" fill="#e8651e" /><circle cx="1377.5845743264654" cy="290" r="8" fill="#e8651e" /><circle cx="1363.983103090868" cy="290" r="8" fill="#e8651e" /><circle cx="1324.8761420869414" cy="290" r="8" fill="#e8651e" /><circle cx="1345.7822996278992" cy="290" r="8" fill="#e8651e" /><circle cx="1356.0101597384346" cy="290" r="8" fill="#e8651e" /><circle cx="1250.2295412861713" cy="290" r="8" fill="#e8651e" /><circle cx="1370.7643344641838" cy="290" r="8" fill="#e8651e" /><circle cx="1303.3821725088274" cy="290" r="8" fill="#e8651e" /><circle cx="1349.5538467311235" cy="290" r="8" fill="#e8651e" /><circle cx="1367.675764332671" cy="290" r="8" fill="#e8651e" />
+<polyline points="1080,689.0109507373461 1086.5,688.7926334701166 1093,688.5263040402256 1099.5,688.2014907356236 1106,687.8054804402199 1112.5,687.3228596302861 1119,686.7349715387361 1125.5,686.0192792532383 1132,685.1486260062903 1138.5,684.0903873226907 1145,682.8055160151633 1151.5,681.2474916255478 1158,679.3612025692537 1164.5,677.0818141206198 1171,674.3337108812942 1177.5,671.0296507289733 1184,667.0703296404525 1190.5,662.3446318626612 1197,656.730921402431 1203.5,650.099804352126 1210,642.318831191153 1216.5,633.2595740398049 1223,622.8073540535698 1229.5,610.8735554234327 1236,597.409913399607 1242.5,582.423431452002 1249,565.989792451045 1255.5,548.2625224903181 1262,529.4750640449809 1268.5,509.9335989249912 1275,490 1281.5,470.06640107500874 1288,450.52493595501915 1294.5,431.73747750968175 1301,414.010207548955 1307.5,397.576568547998 1314,382.59008660039297 1320.5,369.1264445765673 1327,357.1926459464302 1333.5,346.74042596019507 1340,337.6811688088471 1346.5,329.90019564787406 1353,323.26907859756903 1359.5,317.65536813733877 1366,312.9296703595475 1372.5,308.97034927102663 1379,305.6662891187057 1385.5,302.9181858793802 1392,300.6387974307463 1398.5,298.75250837445225 1405,297.1944839848366 1411.5,295.9096126773092 1418,294.85137399370973 1424.5,293.9807207467617 1431,293.26502846126397 1437.5,292.67714036971387 1444,292.1945195597802 1450.5,291.79850926437643 1457,291.4736959597744 1463.5,291.20736652988336 1470,290.98904926265385" fill="none" stroke="#e7e7eb" stroke-width="4" stroke-linecap="round"/>
+
+</svg>

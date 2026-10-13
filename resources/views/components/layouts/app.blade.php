@@ -25,6 +25,7 @@
     </script>
 
     <x-seo :seo="$seo" />
+    <x-analytics />
 
     <meta name="theme-color" content="#eaecef" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">

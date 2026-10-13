@@ -44,12 +44,16 @@ class SecurityHeaders
     {
         $directives = [
             "default-src 'self'",
-            "script-src 'self' 'nonce-{$nonce}'",
+            // googletagmanager.com: gtag.js injects further script tags of its own at
+            // runtime, which don't carry our nonce, so it needs the origin allowed too.
+            "script-src 'self' 'nonce-{$nonce}' https://www.googletagmanager.com",
             // Inline style attributes are used for animation delays and CSS custom properties.
             "style-src 'self' 'unsafe-inline'",
             "img-src 'self' data: https:",
             "font-src 'self' data:",
-            "connect-src 'self'",
+            // google-analytics.com: where gtag.js actually sends hits (googletagmanager.com
+            // only serves the library itself).
+            "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com",
             "media-src 'self'",
             "object-src 'none'",
             "base-uri 'self'",

@@ -80,6 +80,11 @@ return [
         'csp' => (bool) env('PORTFOLIO_CSP', true),
     ],
 
+    'analytics' => [
+        // Google Analytics 4 measurement ID (G-XXXXXXXXXX). Only loads in production.
+        'google_measurement_id' => env('PORTFOLIO_GA_MEASUREMENT_ID'),
+    ],
+
     // Seconds to cache rendered content queries. Admin edits clear the cache immediately.
     'cache_ttl' => (int) env('PORTFOLIO_CACHE_TTL', 3600),
 

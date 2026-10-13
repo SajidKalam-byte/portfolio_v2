@@ -70,6 +70,8 @@ return [
         'default_image' => 'images/og/default.png',
         'locale' => 'en_IN',
         'twitter_handle' => env('PORTFOLIO_TWITTER_HANDLE'),
+        // Search Console's HTML-tag verification token — Settings → Ownership verification.
+        'google_site_verification' => env('PORTFOLIO_GOOGLE_SITE_VERIFICATION'),
         // Serve `Disallow: /` and noindex headers outside production.
         'block_non_production' => (bool) env('PORTFOLIO_BLOCK_NON_PRODUCTION_INDEXING', true),
     ],

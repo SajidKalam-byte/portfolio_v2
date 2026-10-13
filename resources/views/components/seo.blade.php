@@ -12,6 +12,9 @@
 <meta name="robots" content="{{ $seo->resolvedRobots() }}">
 <meta name="author" content="{{ config('portfolio.identity.name') }}">
 <link rel="canonical" href="{{ $canonical }}">
+@if ($verification = config('portfolio.seo.google_site_verification'))
+    <meta name="google-site-verification" content="{{ $verification }}">
+@endif
 
 <meta property="og:site_name" content="{{ config('portfolio.identity.name') }}">
 <meta property="og:locale" content="{{ config('portfolio.seo.locale') }}">
